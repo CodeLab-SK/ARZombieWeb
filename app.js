@@ -34,7 +34,7 @@ startButton.addEventListener("click", async () => {
         });
 
     } catch (error) {
-        console.error(error);
-        status.textContent = "Could not start AR.";
+        console.error("AR ERROR:", error);
+         status.textContent = error.name + ": " + error.message;
     }
 });
