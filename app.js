@@ -23,7 +23,7 @@ if (!navigator.xr) {
 startButton.addEventListener("click", async () => {
     try {
         const session = await navigator.xr.requestSession("immersive-ar", {
-            requiredFeatures: ["local", "hit-test"]
+            requiredFeatures: ["local"]
         });
 
         status.textContent = "AR started!";
